@@ -5,7 +5,7 @@ const WeatherDetails = ({ data, viewMode }) => {
   const dayData = viewMode === 'today' ? data.forecast.forecastday[0] : data.forecast.forecastday[1];
 
   return (
-    <div className="grid grid-cols-2 gap-4 my-4">
+    <div className="grid grid-cols-2 gap-4 my-4 p-4">
       <div className="bg-[#D0BCFF] p-4 rounded-2xl text-black">
         <div className="flex items-center gap-2">
           <Wind size={18} />

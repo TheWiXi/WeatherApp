@@ -6,7 +6,7 @@ const HourlyForecast = ({ data, viewMode }) => {
     : data.forecast.forecastday[1].hour;
 
   return (
-    <div className="bg-[#D0BCFF] p-4 rounded-2xl text-black my-4">
+    <div className="bg-[#D0BCFF] p-4 rounded-2xl text-black m-4 p-6">
       <h3 className="text-lg font-semibold mb-2">Hourly Forecast</h3>
       <div className="flex overflow-x-auto">
         {hourlyData.map((hour, index) => (

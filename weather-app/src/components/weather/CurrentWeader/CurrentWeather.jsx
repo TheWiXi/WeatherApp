@@ -20,13 +20,14 @@ const CurrentWeather = ({ data }) => {
   if (!data) return null;
 
   return (
-    <div className="relative overflow-hidden rounded-3xl text-white bg-gradient-to-b from-purple-600 to-purple-900 p-6 pt-28">
+    
+    <div className="relative overflow-hidden rounded-b-3xl w-full max-h-[45vh] absolute z-[1] top-0 text-white p-6 pt-28 bg-cover bg-center h-screen" style={{ backgroundImage: "url('/headerimg.png')" }}>
       <div className="flex justify-between items-start mb-8">
         <div>
           <h2 className="text-6xl font-bold">{Math.round(current.temp_c)}°</h2>
           <p className="text-xl mt-2">Feels like {Math.round(current.feelslike_c)}°</p>
         </div>
-        <div className="text-right">
+        <div className="flex flex-col items-center justify-center">
           <img src={current.condition.icon} alt={current.condition.text} className="w-20 h-20" />
           <p className="mt-2 text-xl">{current.condition.text}</p>
         </div>

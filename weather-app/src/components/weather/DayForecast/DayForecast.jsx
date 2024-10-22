@@ -21,8 +21,8 @@ const DayForecast = ({ data, viewMode }) => {
     : data.forecast.forecastday[1];
 
   return (
-    <div className="bg-[#D0BCFF] p-4 rounded-2xl text-black my-4">
-      <div className="bg-white p-6 rounded-2xl mt-4">
+    <div className="bg-[#D0BCFF] rounded-2xl text-black m-3 p-2">
+      <div className="bg-white p-6 rounded-2xl mt-1 mb-2">
       <h2 className="text-lg font-semibold mb-4">Weekly Forecast</h2>
       <ResponsiveContainer width="100%" height={200}>
         <LineChart data={hourlyData}>

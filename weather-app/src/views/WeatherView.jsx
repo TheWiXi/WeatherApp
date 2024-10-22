@@ -8,6 +8,7 @@ import SunriseSunset from '../components/weather/SunriseSunset/SunriseSunset';
 import TenDayForecast from '../components/weather/TenDayForecast/TenDayForecast';
 
 const WeatherView = ({ data, viewMode, onViewChange }) => {
+  
   return (
     <div>
       <CurrentWeather data={data} />

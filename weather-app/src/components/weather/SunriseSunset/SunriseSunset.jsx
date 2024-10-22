@@ -7,7 +7,7 @@ const SunriseSunset = ({ data, viewMode }) => {
     : data.forecast.forecastday[1];
 
   return (
-    <div className="bg-[#D0BCFF] p-4 rounded-2xl text-black my-4">
+    <div className="bg-[#D0BCFF] p-4 rounded-2xl text-black m-4">
       <h3 className="text-lg font-semibold mb-2">Sun Schedule</h3>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2">
