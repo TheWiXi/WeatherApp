@@ -350,7 +350,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ```bash
 git clone https://github.com/TheWiXi/WeatherApp.git
-cd WeatherApp
+cd WeatherApp/weather-app/
 ```
 
 2. Instala las dependencias:
